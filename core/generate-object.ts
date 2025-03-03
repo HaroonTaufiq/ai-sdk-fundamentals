@@ -7,7 +7,7 @@ dotenv.config();
 
 async function main() {
   const result = await generateObject({
-    model: openai("gpt-4o"),
+    model: openai("gpt-4o-mini"),
     prompt: "Tell me a joke. Please incorporate the current temperature in NYC",
     schema: z.object({
       setup: z.string().describe("the setup of the joke"),

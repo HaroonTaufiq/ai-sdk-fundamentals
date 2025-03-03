@@ -5,7 +5,7 @@ import { openai } from "@ai-sdk/openai";
 
 export const generateTextAction = async () => {
   const result = await generateText({
-    model: openai("gpt-4o"),
+    model: openai("gpt-4o-mini"),
     temperature: 1,
     prompt: "Tell me a joke.",
   });

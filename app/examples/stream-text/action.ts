@@ -6,7 +6,7 @@ import { createStreamableValue } from "ai/rsc";
 
 export const streamTextAction = async () => {
   const result = await streamText({
-    model: openai("gpt-4o"),
+    model: openai("gpt-4o-mini"),
     temperature: 0.5,
     prompt: "Tell me a joke.",
   });

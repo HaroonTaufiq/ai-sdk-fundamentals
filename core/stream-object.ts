@@ -7,7 +7,7 @@ dotenv.config();
 
 async function main() {
   const result = await streamObject({
-    model: openai("gpt-4o"),
+    model: openai("gpt-4o-mini"),
     prompt: "Tell me a joke.",
     schema: z.object({
       setup: z.string().describe("the setup of the joke"),

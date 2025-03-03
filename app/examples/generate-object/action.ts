@@ -6,7 +6,7 @@ import { z } from "zod";
 
 export const generateObjectAction = async () => {
   const { object: joke } = await generateObject({
-    model: openai("gpt-4o"),
+    model: openai("gpt-4o-mini"),
     temperature: 0.5,
     prompt: "Tell me a joke.",
     schema: z.object({
